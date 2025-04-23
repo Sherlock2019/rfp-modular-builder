@@ -10,11 +10,22 @@ st.title("📄 Terraform-Inspired RFP Generator")
 st.sidebar.header("Step 1: Upload Word Template")
 template_file = st.sidebar.file_uploader("Upload your company RFP template (.docx)", type=["docx"])
 
-st.sidebar.header("Step 2: Choose Module Sections")
+st.sidebar.header("Step 2: Upload Customer Input File (Optional)")
+customer_input_file = st.sidebar.file_uploader("Upload customer_inputs.txt", type=["txt"])
+
+customer_data = {}
+if customer_input_file:
+    content = customer_input_file.read().decode("utf-8")
+    for line in content.splitlines():
+        if "=" in line:
+            key, value = line.split("=", 1)
+            customer_data[key.strip()] = value.strip().strip('"')
+
+st.sidebar.header("Step 3: Choose Module Sections")
 module_dirs = sorted([name for name in os.listdir("modules") if os.path.isdir(f"modules/{name}")])
 selected_modules = st.sidebar.multiselect("Select sections to include", module_dirs, default=module_dirs)
 
-st.sidebar.header("Step 3: Fill Template")
+st.sidebar.header("Step 4: Edit and Fill Modules")
 
 edited_modules = {}
 with st.form("edit_modules_form"):
@@ -23,6 +34,11 @@ with st.form("edit_modules_form"):
         path = f"modules/{module}/main.txt"
         with open(path, "r") as f:
             content = f.read()
+
+        for k, v in customer_data.items():
+            placeholder = f"${{{k}}}"
+            content = content.replace(placeholder, v)
+
         edited = st.text_area(f"{module}", value=content, height=250, key=module)
         edited_modules[module] = edited
     save_edits = st.form_submit_button("💾 Save Edits to Module Files")
