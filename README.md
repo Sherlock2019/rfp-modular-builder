@@ -72,8 +72,17 @@ source .venv/bin/activate
 pip install --upgrade pip
 pip install -r requirements.txt
 
-# 5. Now run the GUI
+# 5. for interactive mode Now run the GUI
 make gui
+# 6 . for WEBui Cli  mode Now run the GUI
+streamlit run streamlit_app.py
+    - upload your RFP or CRA or any doc model template
+    - upload your Customer information text file
+    - choose the content block ( executive summary etc )
+    -  edit te content of each block
+    - then generate the file and download it at the bottom 
+
+
 
 ```
 Open `http://localhost:8501` in your browser:
