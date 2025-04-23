@@ -24,8 +24,7 @@ def main():
 
     with open("customer_inputs.txt", "w") as f:
         for k, v in inputs.items():
-            f.write(f"{k} = "{v}"
-")
+            f.write(f'{k} = "{v}"\n')
 
     print("✅ Input file saved as customer_inputs.txt")
 
