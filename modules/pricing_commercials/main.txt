@@ -1,0 +1,12 @@
+## Pricing and Commercials
+
+### Pricing Model
+${pricing_model}
+
+### Cost Breakdown
+- Compute: ${rackspace_service_catalog.compute.pricing}
+- Storage: ${rackspace_service_catalog.storage.pricing}
+- Monitoring, Networking, Support: Based on service level requirements
+
+### Payment Terms
+${payment_terms}

@@ -1,0 +1,7 @@
+## Executive Summary
+
+This proposal outlines Rackspace's tailored solution for ${customer_name}, designed to address key business goals such as ${business_goals}.
+
+We recognize the current pain points, including ${current_issues}, and propose an OpenStack-based private cloud solution to meet those needs.
+
+Our approach, detailed in the Technical Architecture section, delivers scalable, secure infrastructure with ${key_benefits_drivers}. With Rackspace’s ${rackspace_differentiation}, we are confident in our ability to support your telecom-grade infrastructure transformation.

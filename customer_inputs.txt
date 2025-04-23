@@ -1,0 +1,34 @@
+customer_name = "ABC"
+business_goals = "Reduce infrastructure costs by 30%, achieve ISO 27001 compliance, enable flexible telco-scale deployment"
+current_issues = "Legacy virtualization stack, slow VM provisioning, no cloud-native support"
+technical_requirements = "HA OpenStack, Ceph backend, Keystone SSO, Horizon dashboard, API integration"
+proposed_architecture = "3-node OpenStack control plane, Ceph storage, Nova compute with KVM, Neutron SDN"
+requested_services = ["compute", "storage", "networking", "monitoring"]
+scalability_details = "Nova auto-scaling groups, Heat orchestration, multi-AZ support"
+high_availability_dr = {
+  ha_strategy = "3-node quorum with floating IP failover"
+  dr_strategy = "Active-passive replication to remote region with 15-min RPO"
+}
+security_requirements = "MFA login, RBAC controls, CIS hardening"
+compliance_standards = ["ISO 27001", "SOC 2"]
+migration_strategy = "Phased migration using live VM cloning and volume sync"
+implementation_timeline = "12 weeks from contract signature"
+pricing_model = "Monthly subscription with usage-based burst pricing"
+payment_terms = "Net 30, quarterly invoicing"
+key_benefits_drivers = "Reduced TCO, increased performance, hardened security posture"
+rackspace_differentiation = "OpenStack-certified engineers, telecom-grade SLAs, turnkey delivery"
+rackspace_service_catalog = {
+  compute = {
+    name = "Dedicated Compute"
+    description = "Bare metal or KVM instances managed with Nova"
+    features = ["vCPU pinning", "hugepages", "live migration"]
+    pricing = "Per vCPU per hour"
+  }
+  storage = {
+    name = "Ceph Block Storage"
+    description = "Highly available block storage for virtual machines"
+    features = ["3x replication", "volume snapshots", "performance tiers"]
+    pricing = "Per GB per month"
+  }
+}
+customer_workloads = "5G Packet Core, OSS/BSS workloads, media streaming gateways"

@@ -1,0 +1,10 @@
+## Proposed Technical Architecture
+
+We propose a scalable OpenStack architecture for ${customer_name}, composed of:
+
+- Control Plane: ${proposed_architecture}
+- Compute Nodes: Managed Nova KVM infrastructure
+- Storage Backend: Ceph-based block storage
+- Networking: Neutron SDN with multi-AZ support
+
+This setup supports workloads such as: ${customer_workloads}, and is aligned with ${scalability_details}.
