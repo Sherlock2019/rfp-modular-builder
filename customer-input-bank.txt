@@ -1,0 +1,16 @@
+customer_name = "VNBank"
+business_goals = "Migrate to a secure, scalable private cloud to improve uptime and compliance."
+current_issues = "Legacy data center with limited elasticity, costly hardware refresh cycles."
+technical_requirements = "High-availability OpenStack with Ceph, secure networking (Neutron + RBAC), tokenized data storage, PCI-DSS compliance, integration with core banking systems."
+proposed_architecture = "HA OpenStack cluster, dedicated control plane, isolated tenant networking, integrated backup, OpenStack Manila for NFS mounts."
+customer_workloads = "Core banking apps, online transaction processing (OLTP), fraud detection systems."
+scalability_details = "Dynamic scaling for transaction peaks; predictive autoscaling via telemetry."
+high_availability_dr = { ha_strategy = "Pacemaker + MySQL Galera", dr_strategy = "Geo-replication with periodic snapshot export" }
+security_requirements = "Encrypted volumes, TLS everywhere, two-factor admin login, audit logging"
+compliance_standards = ["PCI-DSS", "ISO 27001", "SOC 2"]
+migration_strategy = "Phased workload migration with sandbox validation and rollback"
+implementation_timeline = "6 months"
+pricing_model = "Capex + yearly support contract"
+payment_terms = "Net 45"
+key_benefits_drivers = "Uptime, compliance, risk reduction"
+rackspace_differentiation = "Bank-grade OpenStack deployment experience, 24/7 managed support"
