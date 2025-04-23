@@ -57,7 +57,24 @@ make build
 ### 2. 🌐 Streamlit Web GUI
 
 ```bash
+# 1. Install full Python tooling if not already installed
+sudo apt update
+sudo apt install python3-full python3-venv
+
+# 2. Create a virtual environment in your project folder
+cd ~/rfp-modular-builder
+python3 -m venv .venv
+
+# 3. Activate the virtual environment
+source .venv/bin/activate
+
+# 4. Install dependencies like streamlit inside it
+pip install --upgrade pip
+pip install -r requirements.txt
+
+# 5. Now run the GUI
 make gui
+
 ```
 Open `http://localhost:8501` in your browser:
 - Upload your `.docx` template
