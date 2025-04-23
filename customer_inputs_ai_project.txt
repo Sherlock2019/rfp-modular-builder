@@ -1,0 +1,16 @@
+customer_name = "SmartVision AI"
+business_goals = "Deploy GPU-enabled OpenStack cloud to serve internal LLM, vision model workloads"
+current_issues = "GPU resources unmanaged, lack of multi-user isolation, no billing"
+technical_requirements = "OpenStack + Nova/Cinder/Nova-Scheduler + Kubernetes via Magnum; GPU passthrough, Grafana"
+proposed_architecture = "GPU nodes registered in dedicated GPU AZ; K8s nodes provisioned via Heat"
+customer_workloads = "LLMs, OCR, computer vision pipelines, Jupyter notebooks"
+scalability_details = "Job-based quota enforcement; GPU pool scaling via host admission"
+high_availability_dr = { ha_strategy = "GPU-aware HA for schedulers and controller", dr_strategy = "Backup model checkpoints to remote S3" }
+security_requirements = "AuthN + AuthZ per project, container scanning, volume encryption"
+compliance_standards = ["EU AI Act", "ISO 27001"]
+migration_strategy = "Retain current inference jobs; migrate training to cloud"
+implementation_timeline = "2 months to go-live"
+pricing_model = "Per-hour GPU quota, base + overage"
+payment_terms = "Monthly billing"
+key_benefits_drivers = "GPU efficiency, model governance, rapid provisioning"
+rackspace_differentiation = "LLM-tuned cloud builds with GPU-aware orchestration"

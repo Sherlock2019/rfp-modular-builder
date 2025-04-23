@@ -1,0 +1,16 @@
+customer_name = "CloudXchange"
+business_goals = "Launch a white-labeled OpenStack private cloud for B2B clients across SEA."
+current_issues = "Public cloud lock-in; lack of private tenancy options"
+technical_requirements = "OpenStack with Magnum (K8s), Trove (DBaaS), Ironic (bare metal); multi-tenancy, billing"
+proposed_architecture = "OpenStack on top of hyper-converged infra with Ceph; full service exposure via Horizon and APIs"
+customer_workloads = "SME client workloads, websites, SaaS, dev environments"
+scalability_details = "Region-based expansion model with billing per tenant"
+high_availability_dr = { ha_strategy = "Active-active controller zones", dr_strategy = "Daily sync to remote region" }
+security_requirements = "Tenant network isolation, Horizon auth, API gateway rate limiting"
+compliance_standards = ["ISO 27001", "SOC 2"]
+migration_strategy = "Initial onboarding of test tenants before customer migrations"
+implementation_timeline = "Go-live in 3 months"
+pricing_model = "Self-serve hourly billing"
+payment_terms = "Prepaid credit model"
+key_benefits_drivers = "Independence, margin control, regional branding"
+rackspace_differentiation = "Multi-tenant cloud blueprints with OpenStack best practices"

@@ -1,0 +1,16 @@
+customer_name = "Vietnam National e-Gov Agency"
+business_goals = "Create a national digital service cloud for internal ministries and local governments."
+current_issues = "Fragmented IT silos, lack of central control, high O&M cost."
+technical_requirements = "Multi-region OpenStack with Horizon portal, Keystone federation, Ansible automation, public sector compliance"
+proposed_architecture = "OpenStack across 2 regions with HA controllers, central Keystone, Ceph storage, secure VPN interlink"
+customer_workloads = "Document systems, e-forms, e-learning, healthcare and citizen apps"
+scalability_details = "Add new AZs as provinces onboard; tenant onboarding workflow"
+high_availability_dr = { ha_strategy = "HAproxy load balancing, MariaDB HA", dr_strategy = "Backups to secondary site" }
+security_requirements = "National cybersecurity standards, VPN, RBAC"
+compliance_standards = ["Vietnam Data Law", "ISO 27001"]
+migration_strategy = "App-by-app migration with user impact testing"
+implementation_timeline = "12 months total, first region in 5 months"
+pricing_model = "Per ministry resource chargeback"
+payment_terms = "Government procurement milestones"
+key_benefits_drivers = "Efficiency, central control, digital sovereignty"
+rackspace_differentiation = "Experience with public sector OpenStack and inter-ministry governance"
